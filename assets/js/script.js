@@ -70,8 +70,8 @@ let displayFore = function(data) {
 
     for (i=1; i<6; i++) {
         let weatherCard = document.createElement("div");
-        weatherCard.classList = "card bg-info p-2 m-1"
-        let cardDate = document.createElement("h4")
+        weatherCard.classList = "card bg-info p-2 m-1 col-3"
+        let cardDate = document.createElement("h5")
         let unix = data.daily[i].dt;
         let date = new Date(unix*1000)
         cardDate.textContent = date.toLocaleDateString("en-US");
