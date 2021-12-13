@@ -40,6 +40,7 @@ let searchBtnHandler = function(event) {
 let displayFore = function(data) {
     console.log(data);
     var currentWeather = document.createElement("div");
+    currentWeather.classList = "border border-dark p-1"
     var cityName = document.createElement("h2");
     //let image = "http://openweathermap.org/img/wn/10d@2x.png"
     cityName.textContent = searchArea.value.trim();
